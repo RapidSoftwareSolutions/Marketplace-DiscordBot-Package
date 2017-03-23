@@ -10,7 +10,8 @@
     "domain": "http:\/discordapp.com",
     "credentials": [
       "clientId",
-      "clientSecret"
+      "clientSecret",
+      "accessToken"
     ]
   },
   "blocks": [
@@ -60,7 +61,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         }
@@ -82,7 +83,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -110,7 +111,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -168,7 +169,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -196,7 +197,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -248,7 +249,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -282,7 +283,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -322,7 +323,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -362,7 +363,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -402,7 +403,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -448,7 +449,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -482,7 +483,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -510,7 +511,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -562,7 +563,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -608,7 +609,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -654,7 +655,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -688,7 +689,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -722,7 +723,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -750,7 +751,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -784,7 +785,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -812,7 +813,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -846,7 +847,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -910,7 +911,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -938,7 +939,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1014,7 +1015,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1042,7 +1043,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1100,7 +1101,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1140,7 +1141,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1168,7 +1169,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1202,7 +1203,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1266,7 +1267,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1306,7 +1307,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1334,7 +1335,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1374,7 +1375,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1432,7 +1433,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1472,7 +1473,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1536,7 +1537,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1564,7 +1565,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1604,7 +1605,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1638,7 +1639,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1672,7 +1673,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1700,7 +1701,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1734,7 +1735,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1768,7 +1769,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1796,7 +1797,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1824,7 +1825,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1852,7 +1853,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1892,7 +1893,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1944,7 +1945,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -1978,7 +1979,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2012,7 +2013,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2040,7 +2041,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2068,7 +2069,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2096,7 +2097,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         }
@@ -2118,7 +2119,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2146,7 +2147,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2180,7 +2181,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2220,7 +2221,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2248,7 +2249,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         }
@@ -2270,7 +2271,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2298,7 +2299,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2332,7 +2333,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         }
@@ -2354,7 +2355,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         }
@@ -2376,7 +2377,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2416,7 +2417,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2444,7 +2445,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2472,7 +2473,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2528,7 +2529,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2608,7 +2609,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2820,7 +2821,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2866,7 +2867,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2900,7 +2901,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2940,7 +2941,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -2974,7 +2975,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
@@ -3008,7 +3009,7 @@
       "args": [
         {
           "name": "accessToken",
-          "type": "String",
+          "type": "credentials",
           "info": "Access token for your received from Discord",
           "required": true
         },
