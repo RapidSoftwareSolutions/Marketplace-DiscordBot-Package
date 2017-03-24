@@ -2397,7 +2397,7 @@
           "name": "webhookAvatar",
           "type": "File",
           "info": "128x128 jpeg image for the default webhook avatar",
-          "required": true
+          "required": false
         }
       ],
       "callbacks": [
