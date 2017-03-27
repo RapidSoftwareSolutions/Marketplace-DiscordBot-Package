@@ -3,7 +3,7 @@
 # DiscordBot Package
 DiscordBot
 * Domain: [Discord website](http:/discordapp.com)
-* Credentials: clientId, clientSecret
+* Credentials: clientId, clientSecret, accessToken
 
 ## How to get credentials: 
 0. Go to [Discord website](http:/discordapp.com)
