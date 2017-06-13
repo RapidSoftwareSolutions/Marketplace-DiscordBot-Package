@@ -2,7 +2,7 @@
 
 # DiscordBot Package
 DiscordBot
-* Domain: [Discord website](http:/discordapp.com)
+* Domain: [DiscordBot](http://http:/discordapp.com)
 * Credentials: clientId, clientSecret, accessToken
 
 ## How to get credentials: 
@@ -13,6 +13,15 @@ DiscordBot
 4. Add Bot to your application and provide this bot proper privileges
 5. Get Bot access token from you [Application page](https://discordapp.com/developers/applications/me)
 
+## Custom datatypes: 
+ |Datatype|Description|Example
+ |--------|-----------|----------
+ |Datepicker|String which includes date and time|```2016-05-28 00:00:00```
+ |Map|String which includes latitude and longitude coma separated|```50.37, 26.56```
+ |List|Simple array|```["123", "sample"]``` 
+ |Select|String with predefined values|```sample```
+ |Array|Array of objects|```[{"Second name":"123","Age":"12","Photo":"sdf","Draft":"sdfsdf"},{"name":"adi","Second name":"bla","Age":"4","Photo":"asfserwe","Draft":"sdfsdf"}] ```
+ 
 
 ## DiscordBot.getAccessToken
 Get access token
@@ -29,14 +38,14 @@ Returns the bot's OAuth2 application info.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 
 ## DiscordBot.getSingleChannel
 Guild channels represent an isolated set of users and messages within a Guild.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 
 ## DiscordBot.updateChannel
@@ -44,7 +53,7 @@ Update a channels settings.
 
 | Field           | Type       | Description
 |-----------------|------------|----------
-| accessToken     | credentials| Access token for your received from Discord
+| accessToken     | credentials| Access token for your bot received from Discord
 | channelId       | Number     | Id of the guild channel
 | channelName     | String     | 2-100 character channel name
 | channelPosition | Number     | The position of the channel in the left-hand listing
@@ -57,7 +66,7 @@ Delete a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 
 ## DiscordBot.getChannelMessages
@@ -65,7 +74,7 @@ Returns the messages for a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | aroundId   | Number     | Get messages around this message ID
 | beforeId   | Number     | Get messages before this message ID
@@ -77,7 +86,7 @@ Returns the message from a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | messageId  | Number     | Id of the message
 
@@ -86,7 +95,7 @@ Create a reaction for the message.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | messageId  | Number     | Id of the message
 | emoji      | String     | Emoji
@@ -96,7 +105,7 @@ Delete a reaction the current user has made for the message.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | messageId  | Number     | Id of the message
 | emoji      | String     | Emoji
@@ -106,7 +115,7 @@ Get a list of users that reacted with this emoji.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | messageId  | Number     | Id of the message
 | emoji      | String     | Emoji
@@ -116,7 +125,7 @@ Delete a reaction the user with provided userId has made for the message.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | messageId  | Number     | Id of the message
 | emoji      | String     | Emoji
@@ -127,7 +136,7 @@ Delete all reactions for the message.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | messageId  | Number     | Id of the message
 
@@ -136,7 +145,7 @@ Returns a list of invite objects (with invite metadata) for the channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 
 ## DiscordBot.createChannelInvite
@@ -144,7 +153,7 @@ Create a new invite object for the channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | maxAge     | Number     | Duration of invite in seconds before expiry, or 0 for never
 | maxUses    | Number     | Max number of uses or 0 for unlimited
@@ -156,7 +165,7 @@ Edit the channel permission overwrites for a user in a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | userId     | Number     | Id of the user
 | allow      | Number     | The bitwise value of all allowed permissions
@@ -167,7 +176,7 @@ Edit the channel permission overwrites for a role in a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | roleId     | Number     | Id of the role
 | allow      | Number     | The bitwise value of all allowed permissions
@@ -178,7 +187,7 @@ Delete the channel permission overwrites for a user in a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | userId     | Number     | Id of the user
 
@@ -187,7 +196,7 @@ Delete the channel permission overwrites for a role in a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | roleId     | Number     | Id of the role
 
@@ -196,7 +205,7 @@ Post a typing indicator for the specified channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 
 ## DiscordBot.addPinnedChannelMessage
@@ -204,7 +213,7 @@ Pin a message in a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | messageId  | Number     | Id of the message in channel
 
@@ -213,7 +222,7 @@ Get pinned messages in a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 
 ## DiscordBot.deletePinnedChannelMessage
@@ -221,7 +230,7 @@ Delete a pinned message in a channel.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the guild channel
 | messageId  | Number     | Id of the message in channel
 
@@ -230,7 +239,7 @@ Create a new guild.
 
 | Field                           | Type       | Description
 |---------------------------------|------------|----------
-| accessToken                     | credentials| Access token for your received from Discord
+| accessToken                     | credentials| Access token for your bot received from Discord
 | guildName                       | String     | Name of the guild (2-100 characters)
 | guildRegion                     | String     | {voice_region.id} for voice
 | guildIcon                       | File       | jpeg image for the guild icon
@@ -244,7 +253,7 @@ Returns the new guild object for the given id.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.updateGuild
@@ -252,7 +261,7 @@ Updating existing guild.
 
 | Field                           | Type       | Description
 |---------------------------------|------------|----------
-| accessToken                     | credentials| Access token for your received from Discord
+| accessToken                     | credentials| Access token for your bot received from Discord
 | guildId                         | Number     | Id of the guild
 | guildName                       | String     | Name of the guild (2-100 characters)
 | guildRegion                     | String     | {voice_region.id} for voice
@@ -268,7 +277,7 @@ Returns a list of guild channel objects.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.createGuildChannel
@@ -276,20 +285,20 @@ Returns a list of guild channel objects.
 
 | Field                      | Type       | Description
 |----------------------------|------------|----------
-| accessToken                | credentials| Access token for your received from Discord
+| accessToken                | credentials| Access token for your bot received from Discord
 | guildId                    | Number     | Id of the guild
 | channelName                | String     | Channel name (2-100 characters)
 | channelType                | String     | voice or text(default)
 | voiceChannelBitrate        | Number     | The bitrate (in bits) of the voice channel (voice only)
 | voiceChannelUserLimit      | Number     | The user limit of the voice channel (voice only)
-| channelPermissionsOverwrite| Array      | The channel's permission overwrites
+| channelPermissionsOverwrite| List       | The channel's permission overwrites
 
 ## DiscordBot.updateGuildChannelPositions
 Modify the positions of a set of channel objects for the guild.
 
 | Field         | Type       | Description
 |---------------|------------|----------
-| accessToken   | credentials| Access token for your received from Discord
+| accessToken   | credentials| Access token for your bot received from Discord
 | guildId       | Number     | Id of the guild
 | channelId     | Number     | Id of the channel
 | positionNumber| Number     | Sorting position of the channel
@@ -299,7 +308,7 @@ Returns a list of guild member objects that are members of the guild.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.getGuildMember
@@ -307,7 +316,7 @@ Returns a guild member object for the specified user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 | userId     | Number     | Id of the user
 
@@ -316,11 +325,11 @@ Modify attributes of a guild member.
 
 | Field          | Type       | Description
 |----------------|------------|----------
-| accessToken    | credentials| Access token for your received from Discord
+| accessToken    | credentials| Access token for your bot received from Discord
 | guildId        | Number     | Id of the guild
 | userId         | Number     | Id of the user
 | memberNick     | String     | Value to set users nickname to
-| memberRoles    | Array      | Array of roles the member is assigned
+| memberRoles    | List       | Array of roles the member is assigned
 | mute           | Boolean    | If the user is muted
 | deaf           | Boolean    | If the user is deafened
 | moveToChannelId| String     | Id of channel to move user to (if they are connected to voice)
@@ -330,7 +339,7 @@ Adds a role to a guild member.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 | userId     | Number     | Id of the user
 | roleId     | Number     | Id of the role
@@ -340,7 +349,7 @@ Returns a list of role objects for the guild.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.removeGuildMemberRole
@@ -348,7 +357,7 @@ removes added role to a guild member.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 | userId     | Number     | Id of the user
 | roleId     | Number     | Id of the role
@@ -358,7 +367,7 @@ Create a new role for the guild.
 
 | Field          | Type       | Description
 |----------------|------------|----------
-| accessToken    | credentials| Access token for your received from Discord
+| accessToken    | credentials| Access token for your bot received from Discord
 | guildId        | Number     | Id of the guild
 | roleName       | String     | Name of the role
 | rolePermissions| Number     | Bitwise of the enabled/disabled permissions
@@ -371,7 +380,7 @@ Modify the positions of a set of role objects for the guild.
 
 | Field       | Type       | Description
 |-------------|------------|----------
-| accessToken | credentials| Access token for your received from Discord
+| accessToken | credentials| Access token for your bot received from Discord
 | guildId     | Number     | Id of the guild
 | roleId      | Number     | Id of the role
 | rolePosition| Number     | sorting position of the role
@@ -381,7 +390,7 @@ Update existing role for the guild.
 
 | Field          | Type       | Description
 |----------------|------------|----------
-| accessToken    | credentials| Access token for your received from Discord
+| accessToken    | credentials| Access token for your bot received from Discord
 | guildId        | Number     | Id of the guild
 | roleId         | Number     | Id of the role
 | roleName       | String     | Name of the role
@@ -395,7 +404,7 @@ Returns a list of user objects that are banned from this guild.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.createGuildBan
@@ -403,7 +412,7 @@ Create a guild ban, and optionally delete previous messages sent by the banned u
 
 | Field            | Type       | Description
 |------------------|------------|----------
-| accessToken      | credentials| Access token for your received from Discord
+| accessToken      | credentials| Access token for your bot received from Discord
 | guildId          | Number     | Id of the guild
 | userId           | Number     | Id of the user
 | deleteMessageDays| Number     | Number of days to delete messages for (0-7)
@@ -413,7 +422,7 @@ Remove a guild ban of the banned user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 | userId     | Number     | Id of the user
 
@@ -422,7 +431,7 @@ Delete a guild role.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 | roleId     | Number     | Id of the role
 
@@ -431,7 +440,7 @@ Delete a guild permanently. User must be owner.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.getGuildPruneCount
@@ -439,7 +448,7 @@ Returns an object with one 'pruned' key indicating the number of members that wo
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 | countDays  | Number     | Number of days to count prune for (1 or more)
 
@@ -448,7 +457,7 @@ Begin a prune operation.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 | countDays  | Number     | Number of days to prune (1 or more)
 
@@ -457,7 +466,7 @@ Returns a list of voice region objects for the guild.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.getGuildInvites
@@ -465,7 +474,7 @@ Returns a list of invite objects (with invite metadata) for the guild.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.getGuildIntegrations
@@ -473,7 +482,7 @@ Returns a list of integration objects for the guild.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.createGuildIntegration
@@ -481,7 +490,7 @@ Attach an integration object from the current user to the guild.
 
 | Field          | Type       | Description
 |----------------|------------|----------
-| accessToken    | credentials| Access token for your received from Discord
+| accessToken    | credentials| Access token for your bot received from Discord
 | guildId        | Number     | Id of the guild
 | integrationType| String     | The integration type
 | integrationId  | Number     | Id of the integration.
@@ -491,7 +500,7 @@ Modify the behavior and settings of a integration object for the guild.
 
 | Field            | Type       | Description
 |------------------|------------|----------
-| accessToken      | credentials| Access token for your received from Discord
+| accessToken      | credentials| Access token for your bot received from Discord
 | guildId          | Number     | Id of the guild
 | integrationId    | Number     | Id of the integration.
 | expireBehavior   | Number     | The behavior when an integration subscription lapses
@@ -503,7 +512,7 @@ Sync an integration.
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| Access token for your received from Discord
+| accessToken  | credentials| Access token for your bot received from Discord
 | guildId      | Number     | Id of the guild
 | integrationId| Number     | Id of the integration.
 
@@ -512,7 +521,7 @@ Delete an integration.
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| Access token for your received from Discord
+| accessToken  | credentials| Access token for your bot received from Discord
 | guildId      | Number     | Id of the guild
 | integrationId| Number     | Id of the integration.
 
@@ -521,7 +530,7 @@ Returns the guild embed object.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.getInvite
@@ -529,7 +538,7 @@ Returns the invite object.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | inviteCode | String     | Code of the invite
 
 ## DiscordBot.deleteInvite
@@ -537,7 +546,7 @@ Delete the invite.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | inviteCode | String     | Code of the invite
 
 ## DiscordBot.getCurrentUser
@@ -545,14 +554,14 @@ Returns the user object of the requester's account.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 
 ## DiscordBot.getUser
 Returns a user for a given user ID.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | userId     | Number     | Id of the user
 
 ## DiscordBot.updateCurrentUser
@@ -560,7 +569,7 @@ Returns the user object of the requester's account.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | username   | String     | New username
 | avatar     | File       | JPEG avatar image
 
@@ -569,7 +578,7 @@ Returns a list of user guild objects the current user is a member of.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | beforeId   | Number     | Get guilds before this guild ID
 | afterId    | Number     | Get guilds after this guild ID
 | limit      | Number     | Max number of guilds to return (1-100)
@@ -579,7 +588,7 @@ Leave a guild.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.getUserDms
@@ -587,14 +596,14 @@ Returns a list of DM channel objects.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 
 ## DiscordBot.createDm
 Create a new DM channel with a user.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | recipientId| Number     | Id of the recipient
 
 ## DiscordBot.createGroupDm
@@ -602,8 +611,8 @@ Create a new DM channel with a user.
 
 | Field       | Type       | Description
 |-------------|------------|----------
-| accessToken | credentials| Access token for your received from Discord
-| accessTokens| Array      | Access tokens of users that have granted your app the gdm.join scope
+| accessToken | credentials| Access token for your bot received from Discord
+| accessTokens| List       | Access tokens of users that have granted your app the gdm.join scope
 | nicks       | JSON       | Dictionary of user ids to their respective nicknames
 
 ## DiscordBot.getUsersConnections
@@ -611,21 +620,21 @@ Returns a list of connection objects.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 
 ## DiscordBot.getVoiceRegions
 Returns an array of voice region objects that can be used when creating servers.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 
 ## DiscordBot.createWebhook
 Create a new webhook. 
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| Access token for your received from Discord
+| accessToken  | credentials| Access token for your bot received from Discord
 | channelId    | Number     | Id of the channel
 | webhookName  | String     | Name of the webhook (2-100 characters)
 | webhookAvatar| File       | 128x128 jpeg image for the default webhook avatar
@@ -635,7 +644,7 @@ Returns a list of channel webhook objects.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the channel
 
 ## DiscordBot.getGuildWebhooks
@@ -643,7 +652,7 @@ Returns a list of guild webhook objects.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 
 ## DiscordBot.getSingleWebhook
@@ -651,7 +660,7 @@ Returns the new webhook object for the given id.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | webhookId  | Number     | Id of the webhook
 
 ## DiscordBot.getWebhookWithToken
@@ -667,7 +676,7 @@ Update a webhook.
 
 | Field        | Type       | Description
 |--------------|------------|----------
-| accessToken  | credentials| Access token for your received from Discord
+| accessToken  | credentials| Access token for your bot received from Discord
 | webhookId    | Number     | Id of the webhook
 | webhookName  | String     | Name of the webhook (2-100 characters)
 | webhookAvatar| File       | 128x128 jpeg image for the default webhook avatar
@@ -687,7 +696,7 @@ Delete a webhook.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | webhookId  | Number     | Id of the webhook
 
 ## DiscordBot.deleteWebhookWithToken
@@ -717,7 +726,7 @@ Execute a webhook with ebmed content
 |-----------------|--------|----------
 | webhookToken    | String | Access token for webhook
 | webhookId       | Number | Id of the webhook
-| embed           | Array  | Array of embed objects
+| embed           | List   | Array of embed objects
 | webhookUsername | String | Override the default username of the webhook
 | webhookAvatarUrl| String | Override the default avatar of the webhook
 | tts             | Boolean| true if this is a TTS message
@@ -739,7 +748,7 @@ Adds a recipient to a Group DM using their access token
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | userToken  | String     | access token of a user that has granted your app the gdm.join scope
 | channelId  | Number     | Id of the Group DM channel
 | userId     | Number     | Id of the user
@@ -750,7 +759,7 @@ Remove a recipient from a Group DM
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the Group DM channel
 | userId     | Number     | Id of the user
 
@@ -759,7 +768,7 @@ Adds a user to the guild, provided you have a valid oauth2 access token for the 
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 | userId     | Number     | Id of the user
 | userToken  | String     | An oauth2 access token granted with the guilds.join to the bot's application for the user you want to add to the guild
@@ -769,7 +778,7 @@ Remove a member from a guild.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | guildId    | Number     | Id of the guild
 | userId     | Number     | Id of the user
 
@@ -778,7 +787,7 @@ Delete a message.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the channel
 | messageId  | Number     | Id of the message
 
@@ -787,7 +796,7 @@ Delete multiple messages in a single request.
 
 | Field      | Type       | Description
 |------------|------------|----------
-| accessToken| credentials| Access token for your received from Discord
+| accessToken| credentials| Access token for your bot received from Discord
 | channelId  | Number     | Id of the channel
-| messageIds | Array      | Ids of the messages
+| messageIds | List       | Ids of the messages
 

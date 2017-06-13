@@ -1079,7 +1079,12 @@
         },
         {
           "name": "channelPermissionsOverwrite",
-          "type": "Array",
+          "type": "List",
+          "structure": {
+            "name": "channelPermissionsOverwrite",
+            "type": "JSON",
+            "info": "Single channelPermissionsOverwrite"
+          },
           "info": "The channel's permission overwrites",
           "required": false
         }
@@ -1227,7 +1232,12 @@
         },
         {
           "name": "memberRoles",
-          "type": "Array",
+          "type": "List",
+          "structure": {
+            "name": "memberRole",
+            "type": "String",
+            "info": "Single memberRole"
+          },
           "info": "Array of roles the member is assigned",
           "required": false
         },
@@ -2305,7 +2315,12 @@
         },
         {
           "name": "accessTokens",
-          "type": "Array",
+          "type": "List",
+          "structure": {
+            "name": "accessToken",
+            "type": "String",
+            "info": "Single accessToken"
+          },
           "info": "Access tokens of users that have granted your app the gdm.join scope",
           "required": true
         },
@@ -2729,7 +2744,12 @@
         },
         {
           "name": "embed",
-          "type": "Array",
+          "type": "List",
+          "structure": {
+            "name": "embed",
+            "type": "String",
+            "info": "Single embed"
+          },
           "info": "Array of embed objects",
           "required": true
         },
@@ -3021,7 +3041,12 @@
         },
         {
           "name": "messageIds",
-          "type": "Array",
+          "type": "List",
+          "structure": {
+            "name": "messageId",
+            "type": "String",
+            "info": "Single messageId"
+          },
           "info": "Ids of the messages",
           "required": true
         }
