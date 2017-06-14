@@ -16,7 +16,7 @@ $app->post('/api/DiscordBot/updateGuildMember', function ($request, $response, $
     if(isset($post_data['args']['memberNick']) && strlen($post_data['args']['memberNick']) > 0){
         $body['nick'] = $post_data['args']['memberNick'];
     }
-    if(isset($post_data['args']['memberRoles']) && strlen($post_data['args']['memberRoles']) > 0){
+    if(isset($post_data['args']['memberRoles']) && count($post_data['args']['memberRoles']) > 0){
         $body['roles'] = $post_data['args']['memberRoles'];
     }
     if(isset($post_data['args']['mute']) && strlen($post_data['args']['mute']) > 0){

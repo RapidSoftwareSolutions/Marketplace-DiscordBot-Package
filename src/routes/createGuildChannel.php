@@ -25,8 +25,8 @@ $app->post('/api/DiscordBot/createGuildChannel', function ($request, $response, 
     if (isset($post_data['args']['voiceChannelUserLimit']) && strlen($post_data['args']['voiceChannelUserLimit']) > 0) {
         $body['user_limit'] = $post_data['args']['voiceChannelUserLimit'];
     }
-    if (isset($post_data['args']['channelPermissionsOverwrite']) && strlen($post_data['args']['guildRoles']) > 0) {
-        $body['permission_overwrites'] = $post_data['args']['guildRoles'];
+    if (isset($post_data['args']['channelPermissionsOverwrite']) && count($post_data['args']['channelPermissionsOverwrite']) > 0) {
+        $body['permission_overwrites'] = $post_data['args']['channelPermissionsOverwrite'];
     }
     //requesting remote API
     $client = new GuzzleHttp\Client();
