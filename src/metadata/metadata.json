@@ -15,12 +15,12 @@
     ]
   },
   "steps": [
-    "Go to Discord website",
+    "Go to Discord website (http://discordapp.com/)",
     "Log in or create a new account",
-    "Register an app",
+    "Register an app (https://discordapp.com/developers/applications/me)",
     "After creation your app you will see Client ID and Client Secret",
     "'Create A Bot User' for your application and provide this bot proper privileges",
-    "Get Bot access token from you Application page"
+    "Get Bot access token from you Application page (https://discordapp.com/developers/applications/me)"
   ],
   "blocks": [
     {
