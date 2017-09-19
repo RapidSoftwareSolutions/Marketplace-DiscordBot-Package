@@ -10,7 +10,7 @@ DiscordBot
 1. Log in or create a new account
 2. [Register an app](https://discordapp.com/developers/applications/me)
 3. After creation your app you will see Client ID and Client Secret
-4. Add Bot to your application and provide this bot proper privileges
+4. "Create A Bot User" for your application and provide this bot proper privileges
 5. Get Bot access token from you [Application page](https://discordapp.com/developers/applications/me)
 
 ## Custom datatypes: 
